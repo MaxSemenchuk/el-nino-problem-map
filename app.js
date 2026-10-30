@@ -2,7 +2,8 @@
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const US_ID = 'P_US';
-const LK = {active:'works on it', partial:'partly', planned:'proposed niche'};
+const LK = {active:'works on it', partial:'partly', planned:'proposed niche', enabler:'tool that could help'};
+const TOOL = 'Open-source project';
 
 fetch('data/problems.json').then(r => r.json()).then(start).catch(e => {
   document.body.insertAdjacentHTML('afterbegin', '<p style="padding:16px">Could not load data/problems.json. If you opened this file directly, serve the folder instead, for example <code>python3 -m http.server</code>.</p>');
@@ -61,7 +62,8 @@ function start(D){
       [P.filter(p => p.labels.includes(L0)).length, L0.toLowerCase()],
       [P.filter(p => p.labels.includes(L1)).length, L1.toLowerCase()],
       [P.filter(p => p.verify).length, 'need verification'],
-      [D.partners.length-1, 'organisations'],
+      [D.partners.filter(x => x.kind !== TOOL && x.id !== US_ID).length, 'organisations'],
+      [D.partners.filter(x => x.kind === TOOL).length, 'open-source projects'],
       [gap, 'high-impact problems with nobody found']
     ];
     $('#stats').innerHTML = items.map(([n,t]) => `<div class="stat"><b>${n}</b><span>${t}</span></div>`).join('');
@@ -115,7 +117,7 @@ function start(D){
       bindGo(el); return;
     }
     const p = byId.get(id), c = p.cov, related = [...adj.get(id)].map(x => byId.get(x)).sort(idCmp);
-    const wl = [...byProb.get(id)].sort((a,b) => ({active:0,partial:1,planned:2}[a.k]) - ({active:0,partial:1,planned:2}[b.k]));
+    const wl = [...byProb.get(id)].sort((a,b) => ({active:0,partial:1,enabler:2,planned:3}[a.k]) - ({active:0,partial:1,enabler:2,planned:3}[b.k]));
     el.innerHTML = `
       <div class="dh"><span class="id">${p.id}</span><h2>${esc(p.title)}</h2></div>
       <div style="margin-top:6px">${labelBadges(p)}</div>
@@ -189,7 +191,7 @@ function start(D){
     const gl = root.append('g'), gn = root.append('g');
     const link = gl.selectAll('line').data(links).join('line').attr('class', d => 'link l-' + d.k);
     const node = gn.selectAll('g').data(nodes).join('g')
-      .attr('class', d => 'node ' + (d.t==='p' ? 'n-p' : 'n-h' + (d.id===US_ID ? ' us' : '')))
+      .attr('class', d => 'node ' + (d.t==='p' ? 'n-p' : 'n-h' + (d.id===US_ID ? ' us' : '') + (d.h.kind===TOOL ? ' tool' : '')))
       .attr('tabindex', 0)
       .on('click', (e,d) => { e.stopPropagation(); select(d.id); })
       .on('keydown', (e,d) => { if (e.key==='Enter' || e.key===' '){ e.preventDefault(); select(d.id); } })
@@ -221,14 +223,14 @@ function start(D){
   }
   function styleGraph(){
     if (!G) return;
-    const showH = $('#t-hold').checked, showPP = $('#t-pp').checked, showU = $('#t-us').checked, sel = S.sel;
+    const showH = $('#t-hold').checked, showPP = $('#t-pp').checked, showU = $('#t-us').checked, showT = $('#t-tool').checked, sel = S.sel;
     let near = null;
     if (sel){
       near = new Set([sel]);
       D.links.forEach(l => { if (l.p===sel) near.add(l.n); if (l.n===sel) near.add(l.p); });
       D.edges.forEach(e => { if (e.a===sel) near.add(e.b); if (e.b===sel) near.add(e.a); });
     }
-    G.node.style('display', d => d.t==='h' ? ((showH && (d.id!==US_ID || showU)) ? null : 'none') : null)
+    G.node.style('display', d => d.t==='h' ? ((showH && (d.id!==US_ID || showU) && (d.h.kind!==TOOL || showT)) ? null : 'none') : null)
       .classed('fdim', d => d.t==='p' && !match(d.p))
       .classed('dim', d => near && !near.has(d.id));
     G.node.filter(d => d.t==='p').select('circle.base').attr('fill', d => nodeColor(d.p));
@@ -237,6 +239,7 @@ function start(D){
       if (d.k==='pp') return showPP ? null : 'none';
       if (!showH) return 'none';
       if ((d.source.id===US_ID || d.k==='planned') && !showU) return 'none';
+      if (d.k==='enabler' && !showT) return 'none';
       return null;
     }).classed('dim', d => near && !(near.has(d.source.id) && near.has(d.target.id) && (d.source.id===sel || d.target.id===sel)))
       .classed('hot', d => sel && (d.source.id===sel || d.target.id===sel))
@@ -325,7 +328,7 @@ function start(D){
   }
   document.querySelectorAll('.tab').forEach(b => b.onclick = () => { S.tab = b.dataset.t; try { history.replaceState(null, '', '#' + S.tab); } catch(e) {} render(); });
   document.querySelectorAll('[data-cm]').forEach(b => b.onclick = () => { S.cm = b.dataset.cm; document.querySelectorAll('[data-cm]').forEach(x => x.setAttribute('aria-pressed', x === b)); render(); });
-  ['t-hold','t-pp','t-us'].forEach(i => $('#'+i).onchange = styleGraph);
+  ['t-hold','t-pp','t-us','t-tool'].forEach(i => $('#'+i).onchange = styleGraph);
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (S.tab==='graph'){ built = false; render(); } }, 200); });
   try { const h = location.hash.slice(1); if (TABS.includes(h)) S.tab = h; } catch(e) {}
   stats(); filters(); render();

@@ -39,3 +39,16 @@ Collected from public web pages on 2026-10-30. Search summaries were used to loc
 ## Not yet researched
 
 Health impacts (cholera, dengue, malaria), Latin America and Pacific impacts, hydropower and water systems, fisheries and coral, rice export policy, insurance and risk-pool roles, national-level frameworks. Entries for these in the data are reasoned from general knowledge of past El Niño events and are marked `VERIFY`.
+
+## Open-source projects (GitHub scan, 2026-10-30)
+
+Found by searching GitHub topics (`anticipatory-action`, `el-nino`, `humanitarian-data`) and keywords. Only READMEs and repository metadata were read, not the code. Several are one-person prototypes. A project's link to a problem is the author's reading of its stated purpose.
+
+- El Niño Atlas: https://github.com/AlKhourdajie/El_Nino_Atlas (MIT; tracks this event across forecast, anticipatory action and realised impact)
+- Red Cross IBF system and pipelines: https://github.com/rodekruis/IBF-system (Apache 2.0)
+- ForeAct (Fiji): https://github.com/tom231826-svg/foreact (MIT; working prototype on illustrative data)
+- AA CoPilot: https://github.com/nitinmagima/AA_CoPilot (MIT)
+- Anticipa: https://github.com/gabrielmussafiri/Anticipa (no licence; early prototype)
+- Deliberation enablers, not El Niño specific: Polis https://github.com/compdemocracy/polis (AGPL-3.0), Talk to the City https://github.com/AIObjectives/tttc-light-js (Apache 2.0), Decidim https://github.com/decidim/decidim and Loomio https://github.com/loomio/loomio (AGPL-3.0)
+
+Other El Niño repositories seen but not added (forecasting and visualisation prototypes): CAS-Canglong, kmd-labs/el-nino, Godzila-El-Nino.

@@ -14,7 +14,7 @@ It is a map, not a plan. It is meant to help people with experience in facilitat
   - `VERIFY`: does a fact in it still need checking?
   - A **constraint class**: hard, institutional or political.
 - Each problem is scored on the **nature of its uncertainty** (factual, scenario, strategic, normative, structural, random), the **degree** of uncertainty (1 to 3), and its **impact** (1 to 4). Different natures of uncertainty are reduced by different tools, so the score says what kind of work helps.
-- **18 organisations** linked to the problems they work on, plus a set of **proposed niches** for a facilitation and platform group, framed as hypotheses.
+- **18 organisations** and **8 open-source projects** linked to the problems they work on or could help with, plus a set of **proposed niches** for a facilitation and platform group, framed as hypotheses.
 - Four views: a force-directed graph of problems and organisations, an uncertainty-by-impact matrix, a filterable table, and a coverage-and-gaps view.
 
 ## Open it

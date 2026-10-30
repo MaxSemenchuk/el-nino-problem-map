@@ -1246,6 +1246,54 @@
    "name": "Facilitation and platform group (proposed)",
    "kind": "Proposed",
    "note": "People with experience in facilitation, digital platforms, tools and governance. Proposed niches are hypotheses to test with them, not claims about what exists."
+  },
+  {
+   "id": "P_ATLAS",
+   "name": "El Niño Atlas (AlKhourdajie)",
+   "kind": "Open-source project",
+   "note": "MIT, v0.2.0 (Sep 2026). Tracks this event from forecast through anticipatory action to realised impact, stating the basis for each link and marking gaps. https://github.com/AlKhourdajie/El_Nino_Atlas"
+  },
+  {
+   "id": "P_IBF",
+   "name": "Red Cross IBF system",
+   "kind": "Open-source project",
+   "note": "Apache 2.0. Tools to trigger, manage and execute Red Cross Early Action Protocols, with flood and drought pipelines. https://github.com/rodekruis/IBF-system"
+  },
+  {
+   "id": "P_FOREACT",
+   "name": "ForeAct (Fiji)",
+   "kind": "Open-source project",
+   "note": "MIT, working prototype on illustrative data. Ranks communities after a trigger fires and keeps a decision log. Not an operational system. https://github.com/tom231826-svg/foreact"
+  },
+  {
+   "id": "P_AACOP",
+   "name": "AA CoPilot",
+   "kind": "Open-source project",
+   "note": "MIT. Chat assistant for drought anticipatory action planning from uploaded framework documents. https://github.com/nitinmagima/AA_CoPilot"
+  },
+  {
+   "id": "P_ANTICIPA",
+   "name": "Anticipa",
+   "kind": "Open-source project",
+   "note": "No licence, early research prototype. Machine-learning estimates of flood impact in Southern Africa. https://github.com/gabrielmussafiri/Anticipa"
+  },
+  {
+   "id": "P_POLIS",
+   "name": "Polis",
+   "kind": "Open-source project",
+   "note": "AGPL-3.0. Open-source tool for large-scale open-ended feedback and opinion clustering. A deliberation enabler, not El Niño specific. https://github.com/compdemocracy/polis"
+  },
+  {
+   "id": "P_TTTC",
+   "name": "Talk to the City",
+   "kind": "Open-source project",
+   "note": "Apache 2.0. LLM analysis of large bodies of public input. A deliberation enabler, not El Niño specific. https://github.com/AIObjectives/tttc-light-js"
+  },
+  {
+   "id": "P_DECIDIM",
+   "name": "Decidim and Loomio",
+   "kind": "Open-source project",
+   "note": "AGPL-3.0 participatory democracy and collaborative decision-making platforms. Deliberation enablers, not El Niño specific. https://github.com/decidim/decidim · https://github.com/loomio/loomio"
   }
  ],
  "links": [
@@ -1601,6 +1649,174 @@
    "p": "P_US",
    "n": "0.4",
    "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_ATLAS",
+   "n": "5.5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_ATLAS",
+   "n": "1.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_ATLAS",
+   "n": "X5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_ATLAS",
+   "n": "5.3",
+   "k": "partial",
+   "v": false
+  },
+  {
+   "p": "P_IBF",
+   "n": "2.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IBF",
+   "n": "2.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IBF",
+   "n": "2.4",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IBF",
+   "n": "4.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FOREACT",
+   "n": "4.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FOREACT",
+   "n": "7.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_AACOP",
+   "n": "4.5",
+   "k": "partial",
+   "v": false
+  },
+  {
+   "p": "P_AACOP",
+   "n": "7.4",
+   "k": "partial",
+   "v": false
+  },
+  {
+   "p": "P_ANTICIPA",
+   "n": "1.3",
+   "k": "partial",
+   "v": false
+  },
+  {
+   "p": "P_POLIS",
+   "n": "0.2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_POLIS",
+   "n": "2.1",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_POLIS",
+   "n": "7.5",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_POLIS",
+   "n": "X2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_POLIS",
+   "n": "X6",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_TTTC",
+   "n": "0.2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_TTTC",
+   "n": "2.1",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_TTTC",
+   "n": "7.5",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_TTTC",
+   "n": "X2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_TTTC",
+   "n": "X6",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_DECIDIM",
+   "n": "0.2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_DECIDIM",
+   "n": "2.1",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_DECIDIM",
+   "n": "7.5",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_DECIDIM",
+   "n": "X2",
+   "k": "enabler",
+   "v": false
+  },
+  {
+   "p": "P_DECIDIM",
+   "n": "X6",
+   "k": "enabler",
    "v": false
   }
  ],
