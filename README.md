@@ -4,6 +4,8 @@ An open, argue-with-it inventory of the problems that stand between a very stron
 
 It is a map, not a plan. It is meant to help people with experience in facilitation, digital platforms, tools and governance see where the real obstacles are, where uncertainty is largest, and where help is most needed.
 
+**Live demo: https://maxsemenchuk.github.io/el-nino-problem-map/**
+
 **Status: first draft, 2026-10-30.** Facts come from public sources and are not independently verified. Anything marked `VERIFY` needs a primary-source check. Scores are one author's judgement.
 
 ## What is in it
