@@ -1,0 +1,1941 @@
+{
+ "meta": {
+  "title": "El Niño 2026–27 problem map",
+  "subtitle": "An inventory of the problems that stand between a very strong El Niño forecast and effective collective action, with who is working on what.",
+  "asOf": "2026-10-30",
+  "status": "First draft. Facts come from public sources collected on the as-of date; anything marked [VERIFY] still needs a primary-source check. Scores for the nature of uncertainty, its degree and impact are the author's judgement and are meant to be argued with.",
+  "labels": [
+   {
+    "id": "STRUCTURAL",
+    "desc": "The problem exists regardless of this event. It is a chronic gap in forecasting, finance, delivery or governance."
+   },
+   {
+    "id": "EVENT",
+    "desc": "Created or sharply amplified by the 2026–27 El Niño."
+   }
+  ],
+  "verifyLabel": "VERIFY",
+  "classes": {
+   "H": "hard (physics, logistics, time)",
+   "I": "institutional (rules, mandates, can be changed)",
+   "P": "political (interests, incentives)"
+  },
+  "natures": {
+   "F": {
+    "name": "Factual",
+    "color": "nF",
+    "desc": "Numbers, norms or states of the world that are unknown but can be looked up or measured.",
+    "reduce": "Reduced by research and verification."
+   },
+   "S": {
+    "name": "Scenario",
+    "color": "nS",
+    "desc": "Depends on how the climate event and its knock-on effects unfold.",
+    "reduce": "Cannot be reduced by us. Prepare for several scenarios."
+   },
+   "G": {
+    "name": "Strategic",
+    "color": "nG",
+    "desc": "Depends on the choices of actors: donors, governments, agencies, markets.",
+    "reduce": "Reduced by commitments, shared rules and understanding incentives."
+   },
+   "N": {
+    "name": "Normative",
+    "color": "nN",
+    "desc": "No factually correct answer. It is a question of values and trade-offs.",
+    "reduce": "Reduced by a legitimate process for choosing, for example facilitated deliberation with affected people."
+   },
+   "T": {
+    "name": "Structural / technical",
+    "color": "nT",
+    "desc": "A known trade-off or an unsolved engineering problem.",
+    "reduce": "New data will not help. Choose which distortion is acceptable and say so."
+   },
+   "R": {
+    "name": "Random event",
+    "color": "nR",
+    "desc": "The type of event is known; timing and size are not.",
+    "reduce": "Reduced by robust design and contingency plans."
+   }
+  },
+  "degrees": {
+   "1": "Known, a path exists",
+   "2": "Partly known",
+   "3": "Unknown or not knowable now"
+  },
+  "impacts": {
+   "4": "Critical",
+   "3": "High",
+   "2": "Moderate",
+   "1": "Low"
+  },
+  "impactNote": "Impact means: how much this problem determines whether early action works in time and reaches the people at risk.",
+  "layers": {
+   "0": "Frame",
+   "1": "Forecast and knowledge",
+   "2": "Triggers and decision rules",
+   "3": "Finance",
+   "4": "Delivery and operations",
+   "5": "Data and information",
+   "6": "Sector impacts",
+   "7": "Governance and coordination",
+   "8": "Communication and trust",
+   "9": "Political economy",
+   "X": "Cross-cutting"
+  }
+ },
+ "problems": [
+  {
+   "id": "0.1",
+   "layer": "0",
+   "title": "The event path is uncertain",
+   "text": "Intensity, peak timing and regional pattern of the 2026–27 El Niño are still forecast as probabilities. Strength does not map linearly to impact, and the Indian Ocean Dipole and other modes change the outcome locally.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "0.2",
+   "layer": "0",
+   "title": "No shared definition of success",
+   "text": "Success of El Niño preparedness is undefined: lives saved, losses avoided, speed of activation, equity of reach, or cost per person reached. Without it, trigger, funding and delivery choices cannot be compared or audited.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [],
+   "nat": "N",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "0.3",
+   "layer": "0",
+   "title": "The window to act is closing",
+   "text": "The peak is expected around September–December 2026, but effects run through 2027 via harvest cycles. Anticipatory action loses value every week it is delayed, and many decisions were needed weeks ago.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "0.4",
+   "layer": "0",
+   "title": "Cost of acting early is judged only afterwards",
+   "text": "If impacts are milder than feared, early spending looks wasted; if they are severe, inaction looks negligent. Nobody agrees in advance how to judge either outcome.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "1.1",
+   "layer": "1",
+   "title": "Global forecast skill, local decisions",
+   "text": "The ENSO state is forecast months ahead with useful skill. The local rainfall or temperature response, and onset and cessation timing of seasons, are much less certain, yet decisions are made locally.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "1.2",
+   "layer": "1",
+   "title": "Strength is not impact",
+   "text": "The same event brings drought in some places and floods in others, and a stronger event does not mean worse impact everywhere. Briefings warn against presenting a worst-case 'super El Niño' as confirmed.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "1.3",
+   "layer": "1",
+   "title": "Impact translation gap",
+   "text": "Models that turn climate forecasts into crop, disease, price or displacement impacts are patchy and mostly calibrated on a few past events (2015–16, 2023–24).",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "F",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "1.4",
+   "layer": "1",
+   "title": "A possibly record event has no analogue",
+   "text": "NOAA's September bulletin reportedly gave a 75% chance of a historic event (stronger than any since 1950) for October–December. Lessons from past events may not transfer. Earlier bulletins gave different figures.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "1.5",
+   "layer": "1",
+   "title": "Forecasts do not reach decision makers in usable form",
+   "text": "National services and regional outlook forums issue seasonal forecasts, but consensus products are not always translated into the languages, formats, thresholds and channels that decision makers and communities use.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": true,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 1,
+   "imp": 3
+  },
+  {
+   "id": "1.6",
+   "layer": "1",
+   "title": "Different sources, different signals",
+   "text": "NOAA, WMO, regional centres and research groups use different indices, thresholds and wording. Decision makers receive signals that look contradictory.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "2.1",
+   "layer": "2",
+   "title": "Trigger design: false alarm versus miss",
+   "text": "A trigger trades the cost of acting in vain against the cost of missing a real crisis. Where to set it is a value judgement that differs by sector, country and community, and is usually made by technical staff.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "N",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "2.2",
+   "layer": "2",
+   "title": "Basis risk",
+   "text": "Trigger indicators may not match what people actually experience. Support can fire when no harm occurs and fail to fire when it does.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "2.3",
+   "layer": "2",
+   "title": "Triggers built for past regimes",
+   "text": "Triggers and thresholds need review for this event; many frameworks were calibrated on earlier, weaker events.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "I"
+   ],
+   "nat": "F",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "2.4",
+   "layer": "2",
+   "title": "Who decides to activate",
+   "text": "Authority to release money on a forecast is spread across governments, UN agencies, NGOs and donors, and is sometimes unclear. Delay costs the window.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "2.5",
+   "layer": "2",
+   "title": "Decisions under shifting odds",
+   "text": "Probabilities change month to month. The chance of a very strong event was reported at different levels in July, August and September. Rules for when to commit, escalate or stand down are rarely explicit.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "3.1",
+   "layer": "3",
+   "title": "Constrained aid budgets, delayed money",
+   "text": "Aid budgets are tight and financing often arrives late. Flexible early funding is needed but scarce.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "3.2",
+   "layer": "3",
+   "title": "The joint appeal is underfunded",
+   "text": "The FAO–WFP joint anticipatory action appeal (June 2026 to March 2027) sought USD 202 million for about 8.8 million people in 22 countries. A later summary cites a gap of about USD 167 million.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "3.3",
+   "layer": "3",
+   "title": "Fragmented pooled funds",
+   "text": "CERF, DREF, Start Fund, Start Ready, SFERA and WFP's anticipatory fund each have separate rules, triggers, reporting and speeds.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 1,
+   "imp": 3
+  },
+  {
+   "id": "3.4",
+   "layer": "3",
+   "title": "Proof of need arrives after the window",
+   "text": "Donors want evidence of need before funding. For anticipatory action that evidence only exists once it is too late to act early.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "3.5",
+   "layer": "3",
+   "title": "Macro-fiscal exposure",
+   "text": "In vulnerable countries the event could reduce GDP growth by up to about 1.7 percentage points and raise public debt, leaving little fiscal room for early action.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "F",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "3.6",
+   "layer": "3",
+   "title": "Insurance and risk transfer coverage",
+   "text": "Sovereign and micro insurance coverage, basis risk, premium affordability and payout speed are uneven across the affected countries.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": true,
+   "cls": [
+    "I"
+   ],
+   "nat": "F",
+   "deg": 3,
+   "imp": 2
+  },
+  {
+   "id": "3.7",
+   "layer": "3",
+   "title": "Thin evidence on cost-effectiveness",
+   "text": "The often-cited return of USD 3–7 saved per USD 1 of anticipatory action rests on limited cases and does not hold equally for all hazards and contexts.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "F",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "4.1",
+   "layer": "4",
+   "title": "Pre-positioning and readiness",
+   "text": "Supplies, delivery systems and staff capacity must be tested and pre-positioned before the peak. Many are not.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "4.2",
+   "layer": "4",
+   "title": "Last-mile delivery",
+   "text": "Roads, cash and mobile-money rails, digital ID and local markets are disrupted by drought and floods alike.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "4.3",
+   "layer": "4",
+   "title": "Who receives support before harm is confirmed",
+   "text": "Pre-event targeting means choosing recipients without confirmed loss. Criteria, inclusion and exclusion errors, and the legitimacy of choosing are contested.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "N",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "4.4",
+   "layer": "4",
+   "title": "Local actors implement but rarely lead",
+   "text": "Local organisations are often implementing partners rather than funded leaders, although they hold the access and trust.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "4.5",
+   "layer": "4",
+   "title": "Capacity stretched across many crises",
+   "text": "The same staff and logistics handle El Niño, conflict, disease outbreaks and funding cuts at once.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "4.6",
+   "layer": "4",
+   "title": "Multi-sector anticipation is rare",
+   "text": "Action is needed across health, protection, WASH, education and displacement, but most frameworks are built for food security and floods.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "5.1",
+   "layer": "5",
+   "title": "Shrinking food-security data",
+   "text": "WFP household surveys fell from about 1.1 million in 2024 to about 800,000 in 2025 and have fallen further. The 2026 Global Report on Food Crises reportedly has the fewest countries with data meeting its technical standard in ten years.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "F",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "5.2",
+   "layer": "5",
+   "title": "Continuity of early-warning systems",
+   "text": "FEWS NET was interrupted in 2025 and has reportedly reopened, but its current scope and funding are unclear, and updates for some countries have reportedly stopped.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "5.3",
+   "layer": "5",
+   "title": "Fragmented, non-interoperable data",
+   "text": "Each anticipatory action actor holds its own data and tools. Sharing of forecasts, vulnerability data and activation records is ad hoc.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 1,
+   "imp": 3
+  },
+  {
+   "id": "5.4",
+   "layer": "5",
+   "title": "Stale vulnerability baselines",
+   "text": "Recent baselines of who is vulnerable, and to what, are missing for many of the places the event will hit.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "F",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "5.5",
+   "layer": "5",
+   "title": "No real-time check that early action worked",
+   "text": "Learning loops are slow. Whether anticipatory support reached the right people in time is known months later, if at all.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "5.6",
+   "layer": "5",
+   "title": "Ownership and privacy of beneficiary data",
+   "text": "Pre-registration lists and targeting data are sensitive. Who holds them, who may reuse them, and how consent works are unresolved.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "N",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "6.1",
+   "layer": "6",
+   "title": "Staple crop failure and harvest cycles",
+   "text": "Drought risk is high in southern Africa (for example Zimbabwe, southern Zambia and southern Malawi), Central America and parts of Asia. Effects reach the 2027 harvest.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 2,
+   "imp": 4
+  },
+  {
+   "id": "6.2",
+   "layer": "6",
+   "title": "Rice and commodity price shocks, export bans",
+   "text": "Rice, sugar and palm oil in Southeast Asia are drought-exposed. Past events saw export restrictions that spread shocks to importers.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "6.3",
+   "layer": "6",
+   "title": "Livestock and pastoral losses",
+   "text": "Pasture and water shortages hit herders early, with distress sales and herd losses before any food-insecurity data shows up.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "6.4",
+   "layer": "6",
+   "title": "Flood and storm risk, mixed signals for the Horn",
+   "text": "Flooding is expected in parts of eastern Africa and Asia, but seasonal outlooks for the Greater Horn of Africa have been mixed.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "6.5",
+   "layer": "6",
+   "title": "Disease outbreaks",
+   "text": "Floods, heat and displacement raise the risk of cholera, dengue, malaria and others. Health systems are the least covered sector in anticipatory frameworks.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "6.6",
+   "layer": "6",
+   "title": "Heat extremes",
+   "text": "Heatwaves threaten health, outdoor labour and urban populations, and are rarely tied to funded anticipatory triggers.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "6.7",
+   "layer": "6",
+   "title": "Water and energy stress",
+   "text": "Reservoir levels, hydropower output and municipal water supply are exposed to drought, with cascading effects on industry and health.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "6.8",
+   "layer": "6",
+   "title": "Wildfire and haze",
+   "text": "Drier conditions in Southeast Asia raise fire and transboundary haze risk.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "R",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "6.9",
+   "layer": "6",
+   "title": "Marine ecosystems and fisheries",
+   "text": "Coral bleaching and shifts in fish stocks affect coastal livelihoods and food supply.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 2
+  },
+  {
+   "id": "6.10",
+   "layer": "6",
+   "title": "Displacement and migration",
+   "text": "Crop failure, floods and price shocks can push people to move, adding to existing displacement.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "7.1",
+   "layer": "7",
+   "title": "Fragmented mandates and working groups",
+   "text": "Anticipatory action frameworks exist in dozens of countries, with national and regional working groups, but alignment between governments, agencies and local partners is incomplete.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": true,
+   "cls": [
+    "I"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "7.2",
+   "layer": "7",
+   "title": "National ownership versus international delivery",
+   "text": "Who leads, and who is accountable to the affected state and population, is contested between governments and international agencies.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "7.3",
+   "layer": "7",
+   "title": "Accountability for early action",
+   "text": "If funds are spent on a forecast that did not materialise, or withheld on one that did, it is unclear who answers to whom.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "N",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "7.4",
+   "layer": "7",
+   "title": "Separate calendars and silos",
+   "text": "Climate services, humanitarian, development and disaster risk reduction actors plan on different cycles and budgets.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "7.5",
+   "layer": "7",
+   "title": "Legitimacy of trigger and targeting decisions",
+   "text": "Triggers and targeting rules are set by technical bodies. People who bear the consequences are rarely consulted, so the rules may not be seen as fair.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "8.1",
+   "layer": "8",
+   "title": "Hype or fatigue",
+   "text": "Headlines about a 'super' El Niño can mobilise action, or fatigue and later disbelief when impacts differ by place.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "8.2",
+   "layer": "8",
+   "title": "Misinformation and rumours",
+   "text": "False claims about the cause, the timing or 'weather control' spread around major events and undermine advice.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "8.3",
+   "layer": "8",
+   "title": "Messages must reach communities, not only institutions",
+   "text": "Warnings that stop at national agencies do not change what households do. Channels, languages and trusted messengers matter.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "8.4",
+   "layer": "8",
+   "title": "Probabilistic information is hard to use",
+   "text": "A forecast of 'likely drier than normal' leaves people unsure what to do and when. Risk perception and trust differ across groups.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "T",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "8.5",
+   "layer": "8",
+   "title": "Accessibility of warnings",
+   "text": "Literacy, language, disability, gender and connectivity determine who actually receives and can act on a warning.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "T",
+   "deg": 1,
+   "imp": 3
+  },
+  {
+   "id": "9.1",
+   "layer": "9",
+   "title": "Uneven political will for early action",
+   "text": "Acting before harm requires political courage that humanitarian budgets and election cycles seldom reward.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "9.2",
+   "layer": "9",
+   "title": "Compounding crises",
+   "text": "Conflict, debt, economic fragility, disease and climate change coincide in many of the same countries and make the event harder to respond to.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 4
+  },
+  {
+   "id": "9.3",
+   "layer": "9",
+   "title": "Politicised response",
+   "text": "Allocation of support can follow political rather than risk logic, favouring some regions and groups.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "9.4",
+   "layer": "9",
+   "title": "Moral hazard and dependency",
+   "text": "Predictable early support can weaken incentives for governments and communities to invest in their own preparedness.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 2,
+   "imp": 2
+  },
+  {
+   "id": "9.5",
+   "layer": "9",
+   "title": "The event as a loss-and-damage argument",
+   "text": "Vulnerable-country blocs use the event to press for finance and attribution. This shapes which numbers are published and when.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": true,
+   "cls": [
+    "P"
+   ],
+   "nat": "G",
+   "deg": 3,
+   "imp": 2
+  },
+  {
+   "id": "9.6",
+   "layer": "9",
+   "title": "Short-term event focus versus long-term resilience",
+   "text": "Money mobilised for the peak may crowd out spending on structural resilience, or the reverse.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "P"
+   ],
+   "nat": "N",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "X1",
+   "layer": "X",
+   "title": "A forecast is not a decision",
+   "text": "The value of a forecast depends on the decision it feeds. Improving forecasts without clarifying decisions, costs and thresholds yields little.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [],
+   "nat": "T",
+   "deg": 1,
+   "imp": 4
+  },
+  {
+   "id": "X2",
+   "layer": "X",
+   "title": "Speed versus legitimacy",
+   "text": "Fast action competes with consultation and fair targeting. The balance differs by hazard and context but is rarely discussed openly.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [],
+   "nat": "N",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "X3",
+   "layer": "X",
+   "title": "Cascading and sequential hazards",
+   "text": "Drought followed by floods, or heat on top of price shocks, means sector-by-sector planning misses compounding effects.",
+   "labels": [
+    "EVENT"
+   ],
+   "verify": false,
+   "cls": [
+    "H"
+   ],
+   "nat": "S",
+   "deg": 3,
+   "imp": 3
+  },
+  {
+   "id": "X4",
+   "layer": "X",
+   "title": "Single points of trust",
+   "text": "A few forecast centres and data systems underpin global decisions. Disruption of any one of them degrades the whole picture.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [],
+   "nat": "T",
+   "deg": 1,
+   "imp": 3
+  },
+  {
+   "id": "X5",
+   "layer": "X",
+   "title": "Lessons decay between events",
+   "text": "Strong events recur every few years. Institutional memory, staff and data from earlier events fade before the next.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [
+    "I"
+   ],
+   "nat": "G",
+   "deg": 2,
+   "imp": 3
+  },
+  {
+   "id": "X6",
+   "layer": "X",
+   "title": "Local knowledge versus global models",
+   "text": "Communities hold knowledge of local seasonal signals that is rarely combined with climate models in decisions.",
+   "labels": [
+    "STRUCTURAL"
+   ],
+   "verify": false,
+   "cls": [],
+   "nat": "N",
+   "deg": 2,
+   "imp": 3
+  }
+ ],
+ "partners": [
+  {
+   "id": "P_NOAA",
+   "name": "NOAA Climate Prediction Center",
+   "kind": "Forecasting",
+   "note": "Issues the monthly ENSO diagnostic discussion and the El Niño advisory. Latest bulletin found: September 2026, probability of a historic event reported at 75% for October–December [VERIFY the October update]."
+  },
+  {
+   "id": "P_WMO",
+   "name": "WMO",
+   "kind": "Forecasting",
+   "note": "El Niño/La Niña Updates. The September 2026 update says El Niño is established and likely to become very strong, with near-certain persistence through February 2027."
+  },
+  {
+   "id": "P_RCOF",
+   "name": "National met services and regional outlook forums",
+   "kind": "Forecasting",
+   "note": "Turn global signals into seasonal outlooks (for example southern Africa and the Greater Horn of Africa forums). Role in this event [VERIFY]."
+  },
+  {
+   "id": "P_FAO",
+   "name": "FAO",
+   "kind": "UN agency",
+   "note": "Co-leads the FAO–WFP joint anticipatory action appeal (22 countries, USD 202m). Agricultural and livestock anticipatory action."
+  },
+  {
+   "id": "P_WFP",
+   "name": "WFP",
+   "kind": "UN agency",
+   "note": "Estimates up to about 49 million more people in acute food insecurity by the end of 2027. Anticipatory plans triggered in several countries since May 2026."
+  },
+  {
+   "id": "P_OCHA",
+   "name": "OCHA / CERF anticipatory action",
+   "kind": "UN agency",
+   "note": "Facilitates CERF anticipatory action frameworks, including a regional framework in Central America."
+  },
+  {
+   "id": "P_IFRC",
+   "name": "IFRC and Red Cross Climate Centre",
+   "kind": "Humanitarian",
+   "note": "DREF early action funding; Climate Centre supports forecast-based financing. Members of the Anticipatory Action Task Force."
+  },
+  {
+   "id": "P_START",
+   "name": "Start Network",
+   "kind": "Humanitarian",
+   "note": "Start Fund and Start Ready pooled funds. Member of the Anticipatory Action Task Force."
+  },
+  {
+   "id": "P_HUB",
+   "name": "Anticipation Hub and AA Task Force",
+   "kind": "Coordination",
+   "note": "Convenes the task force (Anticipation Hub, FAO, IFRC, OCHA, Climate Centre, Start Network, Welthungerhilfe, WFP) and calls for alignment on triggers, financing and readiness."
+  },
+  {
+   "id": "P_FEWS",
+   "name": "FEWS NET",
+   "kind": "Early warning",
+   "note": "Publishes El Niño food-security warnings for southern Africa, East Africa and Asia. Funding and scope in 2026 unclear [VERIFY]."
+  },
+  {
+   "id": "P_IPC",
+   "name": "IPC and Global Report on Food Crises",
+   "kind": "Early warning",
+   "note": "Acute food insecurity classification and annual report. Data coverage reportedly at a ten-year low [VERIFY]."
+  },
+  {
+   "id": "P_CGIAR",
+   "name": "CGIAR",
+   "kind": "Research",
+   "note": "Crop and climate research; part of a coalition on food-security data funding [VERIFY role in El Niño work]."
+  },
+  {
+   "id": "P_WHO",
+   "name": "WHO / PAHO",
+   "kind": "UN agency",
+   "note": "PAHO is part of the Central America anticipatory package with WFP, FAO and UNICEF."
+  },
+  {
+   "id": "P_UNICEF",
+   "name": "UNICEF",
+   "kind": "UN agency",
+   "note": "Part of the Central America anticipatory package."
+  },
+  {
+   "id": "P_RISK",
+   "name": "World Bank and regional risk pools",
+   "kind": "Finance",
+   "note": "Sovereign risk finance, for example African Risk Capacity and CCRIF. Roles in this event [VERIFY]."
+  },
+  {
+   "id": "P_CVF",
+   "name": "CVF / V20",
+   "kind": "Policy bloc",
+   "note": "Publishes science bulletins on the event (May, July, August 2026) for climate-vulnerable countries."
+  },
+  {
+   "id": "P_WHH",
+   "name": "Welthungerhilfe",
+   "kind": "NGO",
+   "note": "June 2026 briefing on implications; cautions against presenting a 'super El Niño' impact scenario as confirmed."
+  },
+  {
+   "id": "P_NDMA",
+   "name": "National disaster management agencies",
+   "kind": "Government",
+   "note": "Own the national anticipatory action frameworks and activation decisions. Country-specific status [VERIFY]."
+  },
+  {
+   "id": "P_US",
+   "name": "Facilitation and platform group (proposed)",
+   "kind": "Proposed",
+   "note": "People with experience in facilitation, digital platforms, tools and governance. Proposed niches are hypotheses to test with them, not claims about what exists."
+  }
+ ],
+ "links": [
+  {
+   "p": "P_NOAA",
+   "n": "0.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_NOAA",
+   "n": "1.4",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_NOAA",
+   "n": "1.6",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_NOAA",
+   "n": "2.5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WMO",
+   "n": "0.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WMO",
+   "n": "1.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WMO",
+   "n": "1.6",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WMO",
+   "n": "8.4",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_RCOF",
+   "n": "1.1",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_RCOF",
+   "n": "1.5",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_FAO",
+   "n": "3.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FAO",
+   "n": "4.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FAO",
+   "n": "6.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FAO",
+   "n": "6.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WFP",
+   "n": "3.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WFP",
+   "n": "4.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WFP",
+   "n": "4.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WFP",
+   "n": "5.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WFP",
+   "n": "6.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_OCHA",
+   "n": "3.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_OCHA",
+   "n": "4.6",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_OCHA",
+   "n": "7.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IFRC",
+   "n": "3.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IFRC",
+   "n": "2.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IFRC",
+   "n": "4.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_START",
+   "n": "3.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_START",
+   "n": "4.4",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_HUB",
+   "n": "7.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_HUB",
+   "n": "2.3",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_HUB",
+   "n": "3.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_HUB",
+   "n": "4.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FEWS",
+   "n": "5.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FEWS",
+   "n": "6.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_FEWS",
+   "n": "6.4",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_IPC",
+   "n": "5.1",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_CGIAR",
+   "n": "1.3",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_CGIAR",
+   "n": "6.1",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_WHO",
+   "n": "6.5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WHO",
+   "n": "4.6",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_UNICEF",
+   "n": "4.6",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_RISK",
+   "n": "3.5",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_RISK",
+   "n": "3.6",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_CVF",
+   "n": "0.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_CVF",
+   "n": "9.5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_CVF",
+   "n": "3.5",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WHH",
+   "n": "1.2",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_WHH",
+   "n": "8.1",
+   "k": "active",
+   "v": false
+  },
+  {
+   "p": "P_NDMA",
+   "n": "2.4",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_NDMA",
+   "n": "7.2",
+   "k": "partial",
+   "v": true
+  },
+  {
+   "p": "P_US",
+   "n": "0.2",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "2.1",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "4.3",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "7.5",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "7.1",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "8.3",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "X2",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "X6",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "5.3",
+   "k": "planned",
+   "v": false
+  },
+  {
+   "p": "P_US",
+   "n": "0.4",
+   "k": "planned",
+   "v": false
+  }
+ ],
+ "edges": [
+  {
+   "a": "0.1",
+   "b": "1.2"
+  },
+  {
+   "a": "0.1",
+   "b": "1.4"
+  },
+  {
+   "a": "0.1",
+   "b": "2.5"
+  },
+  {
+   "a": "0.1",
+   "b": "X3"
+  },
+  {
+   "a": "0.2",
+   "b": "2.1"
+  },
+  {
+   "a": "0.2",
+   "b": "7.3"
+  },
+  {
+   "a": "0.2",
+   "b": "0.4"
+  },
+  {
+   "a": "0.3",
+   "b": "3.4"
+  },
+  {
+   "a": "0.3",
+   "b": "2.4"
+  },
+  {
+   "a": "0.3",
+   "b": "4.1"
+  },
+  {
+   "a": "0.4",
+   "b": "7.3"
+  },
+  {
+   "a": "0.4",
+   "b": "9.1"
+  },
+  {
+   "a": "1.1",
+   "b": "1.2"
+  },
+  {
+   "a": "1.1",
+   "b": "X1"
+  },
+  {
+   "a": "1.3",
+   "b": "6.1"
+  },
+  {
+   "a": "1.3",
+   "b": "6.5"
+  },
+  {
+   "a": "1.4",
+   "b": "1.3"
+  },
+  {
+   "a": "1.4",
+   "b": "2.3"
+  },
+  {
+   "a": "1.5",
+   "b": "8.3"
+  },
+  {
+   "a": "1.5",
+   "b": "1.6"
+  },
+  {
+   "a": "1.6",
+   "b": "8.4"
+  },
+  {
+   "a": "2.1",
+   "b": "2.2"
+  },
+  {
+   "a": "2.1",
+   "b": "7.5"
+  },
+  {
+   "a": "2.1",
+   "b": "X1"
+  },
+  {
+   "a": "2.2",
+   "b": "3.6"
+  },
+  {
+   "a": "2.3",
+   "b": "1.4"
+  },
+  {
+   "a": "2.4",
+   "b": "7.2"
+  },
+  {
+   "a": "2.4",
+   "b": "3.3"
+  },
+  {
+   "a": "2.5",
+   "b": "8.1"
+  },
+  {
+   "a": "2.5",
+   "b": "0.3"
+  },
+  {
+   "a": "3.1",
+   "b": "3.2"
+  },
+  {
+   "a": "3.1",
+   "b": "9.1"
+  },
+  {
+   "a": "3.2",
+   "b": "4.1"
+  },
+  {
+   "a": "3.3",
+   "b": "3.4"
+  },
+  {
+   "a": "3.4",
+   "b": "0.4"
+  },
+  {
+   "a": "3.5",
+   "b": "9.2"
+  },
+  {
+   "a": "3.6",
+   "b": "2.2"
+  },
+  {
+   "a": "3.7",
+   "b": "3.1"
+  },
+  {
+   "a": "4.1",
+   "b": "4.5"
+  },
+  {
+   "a": "4.2",
+   "b": "4.3"
+  },
+  {
+   "a": "4.3",
+   "b": "7.5"
+  },
+  {
+   "a": "4.3",
+   "b": "5.4"
+  },
+  {
+   "a": "4.4",
+   "b": "7.2"
+  },
+  {
+   "a": "4.5",
+   "b": "9.2"
+  },
+  {
+   "a": "4.6",
+   "b": "6.5"
+  },
+  {
+   "a": "4.6",
+   "b": "7.4"
+  },
+  {
+   "a": "5.1",
+   "b": "5.2"
+  },
+  {
+   "a": "5.1",
+   "b": "5.4"
+  },
+  {
+   "a": "5.2",
+   "b": "X4"
+  },
+  {
+   "a": "5.3",
+   "b": "5.5"
+  },
+  {
+   "a": "5.3",
+   "b": "7.1"
+  },
+  {
+   "a": "5.4",
+   "b": "4.3"
+  },
+  {
+   "a": "5.6",
+   "b": "5.3"
+  },
+  {
+   "a": "5.6",
+   "b": "4.3"
+  },
+  {
+   "a": "6.1",
+   "b": "6.2"
+  },
+  {
+   "a": "6.2",
+   "b": "9.3"
+  },
+  {
+   "a": "6.1",
+   "b": "6.10"
+  },
+  {
+   "a": "6.2",
+   "b": "6.10"
+  },
+  {
+   "a": "6.3",
+   "b": "6.10"
+  },
+  {
+   "a": "6.4",
+   "b": "6.5"
+  },
+  {
+   "a": "6.5",
+   "b": "4.6"
+  },
+  {
+   "a": "6.6",
+   "b": "6.7"
+  },
+  {
+   "a": "6.7",
+   "b": "6.5"
+  },
+  {
+   "a": "6.8",
+   "b": "6.6"
+  },
+  {
+   "a": "6.9",
+   "b": "6.3"
+  },
+  {
+   "a": "6.10",
+   "b": "9.2"
+  },
+  {
+   "a": "6.1",
+   "b": "X3"
+  },
+  {
+   "a": "7.1",
+   "b": "7.4"
+  },
+  {
+   "a": "7.2",
+   "b": "7.5"
+  },
+  {
+   "a": "7.3",
+   "b": "7.5"
+  },
+  {
+   "a": "7.4",
+   "b": "X5"
+  },
+  {
+   "a": "8.1",
+   "b": "8.2"
+  },
+  {
+   "a": "8.3",
+   "b": "8.5"
+  },
+  {
+   "a": "8.3",
+   "b": "8.4"
+  },
+  {
+   "a": "8.4",
+   "b": "X6"
+  },
+  {
+   "a": "9.1",
+   "b": "9.3"
+  },
+  {
+   "a": "9.1",
+   "b": "9.6"
+  },
+  {
+   "a": "9.2",
+   "b": "X3"
+  },
+  {
+   "a": "9.4",
+   "b": "9.6"
+  },
+  {
+   "a": "9.5",
+   "b": "3.5"
+  },
+  {
+   "a": "X2",
+   "b": "7.5"
+  },
+  {
+   "a": "X5",
+   "b": "5.5"
+  },
+  {
+   "a": "X6",
+   "b": "1.1"
+  }
+ ]
+}

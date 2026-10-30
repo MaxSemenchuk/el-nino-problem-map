@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Niño 2026–27 Problem Map</title>
+<meta name="description" content="An open inventory of the problems between a very strong El Niño forecast and effective collective action, with who is working on what.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <h1 id="title">El Niño 2026–27 problem map</h1>
+    <p class="sub" id="subtitle"></p>
+    <p class="note" id="status"></p>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <div class="bar">
+    <div class="row">
+      <div class="grp" id="f-label"><label>Label</label></div>
+      <div class="grp" id="f-nat"><label>Nature of uncertainty</label></div>
+    </div>
+    <div class="row">
+      <div class="grp"><label for="f-imp">Impact from</label>
+        <select id="f-imp"></select></div>
+      <div class="grp"><label for="f-layer">Layer</label><select id="f-layer"></select></div>
+      <div class="grp"><input type="search" id="f-q" placeholder="Search: id or word" aria-label="Search"></div>
+      <button class="chip" id="f-reset" type="button">Reset</button>
+      <span class="small" id="f-count"></span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-t="graph">Graph</button>
+    <button class="tab" role="tab" data-t="matrix">Uncertainty × impact</button>
+    <button class="tab" role="tab" data-t="table">Table</button>
+    <button class="tab" role="tab" data-t="gaps">Coverage and gaps</button>
+  </div>
+
+  <div class="main">
+    <div id="views" style="min-width:0">
+      <section id="v-graph" class="panel" style="padding:0" hidden>
+        <div id="gwrap"><svg id="svg" role="img" aria-label="Graph linking problems and the organisations working on them"></svg></div>
+        <div class="gtools">
+          <div class="grp"><label>Colour</label>
+            <button class="chip" data-cm="label" aria-pressed="true">Label</button>
+            <button class="chip" data-cm="nat" aria-pressed="false">Nature</button>
+            <button class="chip" data-cm="cov" aria-pressed="false">Coverage</button></div>
+          <label><input type="checkbox" id="t-hold" checked> Organisations</label>
+          <label><input type="checkbox" id="t-pp" checked> Problem–problem links</label>
+          <label><input type="checkbox" id="t-us" checked> Proposed niches</label>
+          <button class="chip" id="g-reset" type="button">Reset view</button>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="legend small">
+          <span><svg width="30" height="8"><line x1="0" y1="4" x2="30" y2="4" class="l-active"/></svg> works on it</span>
+          <span><svg width="30" height="8"><line x1="0" y1="4" x2="30" y2="4" class="l-partial"/></svg> partly or unverified</span>
+          <span><svg width="30" height="8"><line x1="0" y1="4" x2="30" y2="4" class="l-planned"/></svg> proposed niche</span>
+          <span>Circle size = impact. Dashed ring = needs verification. Drag nodes, scroll to zoom.</span>
+        </div>
+      </section>
+
+      <section id="v-matrix" class="panel" hidden>
+        <h2>Where uncertainty is largest and costs most</h2>
+        <p class="small" style="margin-bottom:10px">Top right holds what matters most and is least understood. These are the first candidates for reducing uncertainty. Dot colour shows what the uncertainty is made of.</p>
+        <div class="mx" id="mx"></div>
+        <div class="defs" id="natdefs"></div>
+      </section>
+
+      <section id="v-table" class="panel" hidden>
+        <div class="tw"><table id="tbl"><thead></thead><tbody></tbody></table></div>
+      </section>
+
+      <section id="v-gaps" class="panel" hidden>
+        <div id="gaps"></div>
+      </section>
+    </div>
+
+    <aside class="panel detail" id="detail" aria-live="polite"></aside>
+  </div>
+  <p class="foot" id="foot"></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
