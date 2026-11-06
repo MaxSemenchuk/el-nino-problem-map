@@ -149,3 +149,6 @@ button.gi:hover{background:var(--surface2)}
 .defs i{width:9px;height:9px;border-radius:50%}
 .foot{color:var(--muted);font-size:12.5px;padding-top:6px}
 @media (prefers-reduced-motion:no-preference){.node{transition:opacity .15s}}
+
+.rlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.rlist li{line-height:1.35}

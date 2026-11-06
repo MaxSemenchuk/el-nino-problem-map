@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Niño 2026–27 Research</title>
+<meta name="description" content="An annotated reading list of current research on the 2026–27 El Niño: forecasting, impacts, anticipatory action, response and finance, linked to the problem map.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="research.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site">
+    <span class="brand">El Niño 2026–27</span>
+    <a href="./">Impact calendar</a>
+    <a href="problems.html">Problem map</a>
+    <a href="research.html" aria-current="page">Research</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow" id="asof">Reading list</div>
+    <h1>What to read on the 2026–27 El Niño</h1>
+    <p class="lede" id="intro"></p>
+  </header>
+
+  <figure class="scale" aria-label="Niño 3.4 sea surface temperature anomaly, degrees Celsius">
+    <div class="scale-bar"></div>
+    <div class="marks">
+      <div class="mark" style="left:12.5%"><span><b>+0.5</b>El Niño threshold</span></div>
+      <div class="mark low" style="left:42.5%"><span><b>+1.7</b>RONI, Jul–Sep</span></div>
+      <div class="mark" style="left:68.75%"><span><b>≈+2.75</b>previous record</span></div>
+      <div class="mark" style="left:87.5%"><span><b>+3.5</b>October</span></div>
+      <div class="mark hi low" style="left:95%"><span><b>up to +3.8</b>forecast Nov–Jan</span></div>
+    </div>
+    <figcaption>Scale 0 to +4 °C. Sources: WMO (Oct 2026), NOAA CPC, Yale E360 (5 Nov 2026). WMO puts past peaks at "about +3 °C"; E360 gives 2.75 °C.</figcaption>
+  </figure>
+
+  <div class="take" id="take"></div>
+
+  <div class="controls">
+    <div class="filters" role="group" aria-label="Filter by theme" id="filters"></div>
+    <div class="legend">
+      <span><i class="dot checked"></i>checked against the source</span>
+      <span><i class="dot found"></i>found, not read in full</span>
+      <span><span class="first">read first</span> most useful in its theme</span>
+      <span><span class="ptag sample">6.1</span> links to that problem on the map</span>
+    </div>
+  </div>
+
+  <div id="list"><p class="muted">Loading…</p></div>
+
+  <section class="gaps">
+    <h2>What is still missing</h2>
+    <ul id="gaps"></ul>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+<script src="research.js"></script>
+</body>
+</html>
