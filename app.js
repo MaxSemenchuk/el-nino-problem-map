@@ -133,8 +133,17 @@ function start(D){
       <div class="dsec"><span class="lab">Who works on it</span>
         ${wl.length ? `<ul class="plist">${wl.map(l => `<li><button class="plink" data-go="${l.p}">${esc(partners.get(l.p).name)}</button><span class="tag ${l.k==='planned'?'pl':''}">${LK[l.k]}</span>${l.v?'<span class="tag">unverified</span>':''}</li>`).join('')}</ul>` : '<p class="small">Nobody found. A gap.</p>'}
       </div>
-      ${related.length ? `<div class="dsec"><span class="lab">Connected problems</span><div class="rel">${related.map(r => `<button data-go="${r.id}" title="${esc(r.title)}">${r.id}</button>`).join('')}</div></div>` : ''}`;
+      ${related.length ? `<div class="dsec"><span class="lab">Connected problems</span><div class="rel">${related.map(r => `<button data-go="${r.id}" title="${esc(r.title)}">${r.id}</button>`).join('')}</div></div>` : ''}
+      ${researchFor(p.id)}`;
     bindGo(el);
+  }
+  /* research that cites a problem, from data/research.json (optional) */
+  let RES = [];
+  fetch('data/research.json').then(r => r.json()).then(R => { RES = R.items || []; detail(); }).catch(() => {});
+  function researchFor(id){
+    const rs = RES.filter(r => (r.problems || []).includes(id));
+    if (!rs.length) return '';
+    return `<div class="dsec"><span class="lab">Research (${rs.length})</span><ul class="rlist">${rs.map(r => `<li><a href="research.html#r-${encodeURIComponent(r.id)}">${esc(r.title)}</a> <span class="small">${esc(r.who.split(',')[0])}, ${esc(r.date)}</span></li>`).join('')}</ul></div>`;
   }
   const bindGo = el => el.querySelectorAll('[data-go]').forEach(b => b.onclick = () => select(b.dataset.go));
   function select(id){ S.sel = id; render(); }
@@ -331,5 +340,7 @@ function start(D){
   ['t-hold','t-pp','t-us','t-tool'].forEach(i => $('#'+i).onchange = styleGraph);
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (S.tab==='graph'){ built = false; render(); } }, 200); });
   try { const h = location.hash.slice(1); if (TABS.includes(h)) S.tab = h; } catch(e) {}
+  try { const q = new URLSearchParams(location.search).get('p'); if (q && byId.has(q)) S.sel = q; } catch(e) {}
   stats(); filters(); render();
+  if (S.sel && innerWidth < 900) { try { $('#detail').scrollIntoView(); } catch(e) {} }
 }
