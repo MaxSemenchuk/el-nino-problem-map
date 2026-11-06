@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Niño 2026–27 Coordination Funders</title>
+<meta name="description" content="Who pays for coordinating the 2026–27 El Niño response: convening, shared data, aligned finance, local voice and learning, linked to the problems on the problem map.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="funders.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Site">
+    <span class="brand">El Niño 2026–27</span>
+    <a href="./">Impact calendar</a>
+    <a href="problems.html">Problem map</a>
+    <a href="research.html">Research</a>
+    <a href="funders.html" aria-current="page">Coordination funders</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Funding map · as of 6 November 2026</div>
+    <h1>Who pays for coordinating the El Niño response</h1>
+    <p class="lede">Hundreds of millions of dollars are lined up for acting early on this El Niño. Very little of it pays for the work that makes those funds fit together: convening the actors, sharing data, aligning triggers and money, giving local actors a say, and learning what worked. This page lists who funds that coordination work, what they pay for, how to reach them, and which problems on the <a href="problems.html">problem map</a> each one touches.</p>
+  </header>
+
+  <div class="status" id="figures"></div>
+
+  <section class="block">
+    <h2>What this means</h2>
+    <p class="prose">Money for coordination is small and concentrated. Most of it comes from a few government donors, above all Germany's Federal Foreign Office, and reaches the field through a handful of platforms: the Anticipation Hub, REAP, Start Network, OCHA and the Global Shield. Almost none of it is open to outside applicants. A facilitation or platform group gets funded by becoming useful to one of these platforms and being written into its programme, not by applying to the large pooled funds.</p>
+    <p class="prose">Open tools are the exception: NLnet and FLOSS/fund take direct applications from individuals. Event money such as CERF, the FAO–WFP appeal and the risk pools is listed for context, because it is what coordination is meant to line up.</p>
+  </section>
+
+  <section class="block">
+    <h2>Funders</h2>
+    <div class="filters" role="group" aria-label="Filter by fit" id="fit-filters"><span class="lab">Fit</span></div>
+    <div class="filters" role="group" aria-label="Filter by coordination function" id="fn-filters"><span class="lab">Function</span></div>
+    <div class="flist" id="list"></div>
+  </section>
+
+  <section class="block">
+    <h2>Problems and who could fund work on them</h2>
+    <p class="prose">Every problem from the problem map, with the funders whose work touches it. A red count means no funder on this page covers the problem. Click a problem ID to open it on the map.</p>
+    <div class="filters" role="group" aria-label="Show" id="cov-filters">
+      <button type="button" id="cov-all" data-c="all" aria-pressed="true">All problems</button>
+      <button type="button" id="cov-gaps" data-c="gaps" aria-pressed="false">Only gaps</button>
+    </div>
+    <div class="cov"><table><thead><tr><th>ID</th><th>Problem</th><th>Funders</th><th>Who</th></tr></thead><tbody id="cov"></tbody></table></div>
+  </section>
+
+  <div class="notes">
+    <section>
+      <h2>How to read this</h2>
+      <ul>
+        <li><b>Fit</b> says how a coordination effort can reach the money: directly, through a partner organisation, or not at all (event money, shown for context).</li>
+        <li><b>Function</b> is the kind of coordination work the funder pays for. One funder can cover several.</li>
+        <li><b>Problem links</b> are the author's reading of each funder's stated purpose, not a statement by the funder.</li>
+        <li><b>VERIFY</b> marks figures or terms not checked against a primary document.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Missing or wrong?</h2>
+      <p class="small">The data lives in <a href="data/funders.json">data/funders.json</a> (CC BY 4.0). Corrections, new funders and disagreements with the fit ratings are welcome, see <a href="https://github.com/MaxSemenchuk/el-nino-problem-map/blob/main/CONTRIBUTING.md">CONTRIBUTING</a>. For writing an honest funding case for coordination work, see the open method <a href="https://github.com/zhiganov/impact-to-funding">Impact to Funding</a>.</p>
+    </section>
+  </div>
+
+  <footer>Draft of 6 November 2026. Figures come from news reports, press releases and funder documents read on that date; funding terms change, so check the funder's own page before applying.</footer>
+</div>
+<script src="funders.js"></script>
+</body>
+</html>
