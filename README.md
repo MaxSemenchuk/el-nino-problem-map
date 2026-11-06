@@ -21,6 +21,10 @@ It is a map, not a plan. It is meant to help people with experience in facilitat
 - **18 organisations** and **8 open-source projects** linked to the problems they work on or could help with, plus a set of **proposed niches** for a facilitation and platform group, framed as hypotheses.
 - Four views: a force-directed graph of problems and organisations, an uncertainty-by-impact matrix, a filterable table, and a coverage-and-gaps view.
 
+## Coordination funders
+
+`funders.html` lists who pays for coordinating the El Niño response (convening, shared data, aligned finance, local voice, learning, open tools), with each funder linked to the problems it touches. Data: `data/funders.json`. Each problem on the map also shows who could fund work on it, and `problems.html?p=3.3` opens a problem directly.
+
 ## Open it
 
 The page reads `data/problems.json`, so serve the folder:

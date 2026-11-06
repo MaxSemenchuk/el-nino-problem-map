@@ -5,12 +5,14 @@ const US_ID = 'P_US';
 const LK = {active:'works on it', partial:'partly', planned:'proposed niche', enabler:'tool that could help'};
 const TOOL = 'Open-source project';
 
-fetch('data/problems.json').then(r => r.json()).then(start).catch(e => {
+Promise.all([fetch('data/problems.json').then(r => r.json()), fetch('data/funders.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([D, F]) => start(D, F)).catch(e => {
   document.body.insertAdjacentHTML('afterbegin', '<p style="padding:16px">Could not load data/problems.json. If you opened this file directly, serve the folder instead, for example <code>python3 -m http.server</code>.</p>');
   console.error(e);
 });
 
-function start(D){
+function start(D, F){
+  const fundersBy = new Map();
+  if (F) F.funders.forEach(f => f.problems.forEach(id => { if (!fundersBy.has(id)) fundersBy.set(id, []); fundersBy.get(id).push(f); }));
   const M = D.meta;
   const LAYERS = M.layers;
   const NAT = Object.fromEntries(Object.entries(M.natures).map(([k,v]) => [k, {...v, c:`var(--${v.color})`}]));
@@ -133,6 +135,7 @@ function start(D){
       <div class="dsec"><span class="lab">Who works on it</span>
         ${wl.length ? `<ul class="plist">${wl.map(l => `<li><button class="plink" data-go="${l.p}">${esc(partners.get(l.p).name)}</button><span class="tag ${l.k==='planned'?'pl':''}">${LK[l.k]}</span>${l.v?'<span class="tag">unverified</span>':''}</li>`).join('')}</ul>` : '<p class="small">Nobody found. A gap.</p>'}
       </div>
+      ${F ? `<div class="dsec"><span class="lab">Who could fund work on it</span>${(fundersBy.get(id)||[]).length ? `<ul class="plist">${fundersBy.get(id).map(f => `<li><a class="plink" href="funders.html#${f.id}">${esc(f.name)}</a></li>`).join('')}</ul>` : '<p class="small">No funder found. See <a href="funders.html">coordination funders</a>.</p>'}</div>` : ''}
       ${related.length ? `<div class="dsec"><span class="lab">Connected problems</span><div class="rel">${related.map(r => `<button data-go="${r.id}" title="${esc(r.title)}">${r.id}</button>`).join('')}</div></div>` : ''}
       ${researchFor(p.id)}`;
     bindGo(el);
@@ -339,7 +342,7 @@ function start(D){
   document.querySelectorAll('[data-cm]').forEach(b => b.onclick = () => { S.cm = b.dataset.cm; document.querySelectorAll('[data-cm]').forEach(x => x.setAttribute('aria-pressed', x === b)); render(); });
   ['t-hold','t-pp','t-us','t-tool'].forEach(i => $('#'+i).onchange = styleGraph);
   let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { if (S.tab==='graph'){ built = false; render(); } }, 200); });
-  try { const h = location.hash.slice(1); if (TABS.includes(h)) S.tab = h; } catch(e) {}
+  try { const h = decodeURIComponent(location.hash.slice(1)); if (TABS.includes(h)) S.tab = h; else if (byId.has(h) || partners.has(h)) S.sel = h; } catch(e) {}
   try { const q = new URLSearchParams(location.search).get('p'); if (q && byId.has(q)) S.sel = q; } catch(e) {}
   stats(); filters(); render();
   if (S.sel && innerWidth < 900) { try { $('#detail').scrollIntoView(); } catch(e) {} }
