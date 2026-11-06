@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "asOf": "2026-11-06",
+    "start": "2026-01",
+    "months": 24,
+    "note": "Regional timings come from climatology and past strong events (1997–98, 2015–16, 2023–24), laid over the current forecast. This is a risk map, not a weather forecast. Month indexes count from January 2026 (0) to December 2027 (23). conf: 3 = almost always seen in past strong events, 2 = often, 1 = sometimes."
+  },
+  "nino34": {
+    "note": "Schematic. Only September 2026 (+2.1 °C, NOAA CPC monthly value) is an observed anchor; the rest is interpolation and an illustrative forecast spread.",
+    "observedThrough": 8,
+    "values": [-0.5,-0.3,0,0.3,0.7,1.1,1.5,1.8,2.1,2.4,2.7,2.8,2.6,2.2,1.6,1.0,0.5,0.1,-0.3,-0.6,-0.8,-0.9,-1.0,-1.0]
+  },
+  "phases": [
+    {"from":0,"to":3,"name":"La Niña / neutral","tone":"cool","o":0.55},
+    {"from":4,"to":6,"name":"Onset","tone":"warm","o":0.55},
+    {"from":7,"to":9,"name":"Growth","tone":"warm","o":0.8},
+    {"from":10,"to":12,"name":"Peak","tone":"warm","o":1},
+    {"from":13,"to":16,"name":"Decay","tone":"warm","o":0.6},
+    {"from":17,"to":19,"name":"Neutral?","tone":"muted","o":0.5},
+    {"from":20,"to":23,"name":"La Niña? (uncertain)","tone":"cool","o":0.45}
+  ],
+  "kinds": {
+    "drought": "Drought",
+    "heat": "Heat and fire",
+    "rain": "Heavy rain and floods",
+    "ocean": "Ocean and storms",
+    "food": "Food and economy",
+    "health": "Health"
+  },
+  "groups": [
+    {"name":"Global","items":[
+      {"name":"Global temperature records","kind":"heat","segs":[[11,23]],"conf":3,"desc":"Global temperature lags Niño-3.4 by 3–5 months. 2027 is likely to be the warmest year on record.","precedent":"1998, 2016 and 2024 were record years right after the peak"},
+      {"name":"Mass coral bleaching","kind":"ocean","segs":[[12,17]],"conf":2,"desc":"Tropical marine heatwaves, especially in the southern hemisphere summer (Great Barrier Reef, Indian Ocean).","precedent":"Global bleaching events in 1998, 2016 and 2024"},
+      {"name":"Food prices: rice, sugar, cocoa, coffee, palm oil","kind":"food","segs":[[10,20]],"conf":2,"desc":"Several regions lose harvests at once. Prices react to expectations before the harvests themselves.","precedent":"Cocoa and rice price spikes in 2023–24"}
+    ]},
+    {"name":"South and Central America","items":[
+      {"name":"Peru and Ecuador: coastal downpours, mudslides","kind":"rain","segs":[[11,15]],"conf":3,"desc":"Warm water off the coast brings rain to a normally dry desert. Mudslides, broken roads, dengue. Peaks in February–March.","precedent":"1998: about $3bn of damage in Peru; 2017 coastal El Niño"},
+      {"name":"Peru: anchovy catch collapse","kind":"food","segs":[[5,17]],"conf":3,"desc":"Warm water pushes fish deeper and south. Fishing seasons are cut or cancelled, which hits the world fishmeal market.","precedent":"First 2023 season cancelled"},
+      {"name":"Central America Dry Corridor: drought","kind":"drought","segs":[[6,9]],"conf":3,"desc":"The July–August dry spell (canícula) ruins maize and bean crops in Guatemala, Honduras, El Salvador and Nicaragua.","precedent":"2015 and 2023: crop failure and more migration"},
+      {"name":"Panama Canal: low water","kind":"food","segs":[[12,17]],"conf":2,"desc":"A dry season after a rainfall deficit lowers Gatún Lake. Limits on draft and on the number of transits.","precedent":"2023–24: transits cut by about a third"},
+      {"name":"Colombia and Venezuela: drought, hydropower shortfall","kind":"drought","segs":[[11,15]],"conf":3,"desc":"A harsher dry season. Hydro-dependent grids run close to the limit; cities ration water.","precedent":"2016 power crisis; 2024 water rationing in Bogotá"},
+      {"name":"Amazon: drought, low rivers, fires","kind":"drought","segs":[[8,15]],"conf":2,"desc":"Rivers drop and cut off communities; fires and carbon emissions. Record-low river levels.","precedent":"2015–16 and 2023: record lows on the Rio Negro"},
+      {"name":"Southern Brazil, Uruguay, northern Argentina: floods","kind":"rain","segs":[[9,11],[15,17]],"conf":3,"desc":"Two bursts: in spring (Oct–Dec) and autumn (Apr–Jun). Floods in Rio Grande do Sul, good soy harvests in Argentina.","precedent":"May 2024 Rio Grande do Sul disaster"}
+    ]},
+    {"name":"North America","items":[
+      {"name":"Atlantic hurricanes suppressed","kind":"ocean","segs":[[5,10]],"conf":2,"desc":"Wind shear over the Atlantic suppresses hurricanes. A rare upside of El Niño, and it is already behind us.","precedent":"1997 and 2015: quiet seasons"},
+      {"name":"Southern US and Mexico: wet, cool winter","kind":"rain","segs":[[11,14]],"conf":2,"desc":"The jet stream shifts south: rain and storms from Texas to Florida, and a winter tornado risk in Florida.","precedent":"1997–98: record winter rainfall in Florida"},
+      {"name":"California: storms and landslides","kind":"rain","segs":[[12,14]],"conf":1,"desc":"Atmospheric rivers are possible. The signal is unreliable.","precedent":"1998: yes; 2016: mostly no"},
+      {"name":"Northern US and Canada: warm winter","kind":"heat","segs":[[11,13]],"conf":3,"desc":"Little snow, weak ice on the Great Lakes. Good for heating bills, bad for winter tourism.","precedent":"2015–16 and 2023–24: very warm winters"}
+    ]},
+    {"name":"Africa","items":[
+      {"name":"Ethiopia and Sudan: rainy-season drought","kind":"drought","segs":[[5,8]],"conf":2,"desc":"Weak summer (kiremt) rains in northern Ethiopia. Crop losses show up in autumn.","precedent":"2015: drought affecting about 10 million people"},
+      {"name":"East Africa: short-rains floods","kind":"rain","segs":[[9,11]],"conf":3,"desc":"Kenya, Somalia, southern Ethiopia, Tanzania. Heavy Oct–Dec rains, especially with a positive Indian Ocean Dipole.","precedent":"1997 and 2023: hundreds dead, millions displaced"},
+      {"name":"Cholera, malaria, Rift Valley fever after floods","kind":"health","segs":[[10,14]],"conf":2,"desc":"Standing water and broken sanitation after the East African floods.","precedent":"1997–98 Rift Valley fever outbreak"},
+      {"name":"Southern Africa: rainy-season drought","kind":"drought","segs":[[11,14]],"conf":3,"desc":"Zimbabwe, Zambia, Malawi, Mozambique, South Africa, Madagascar. The rains fail at the critical time for maize.","precedent":"2015–16 and 2023–24: worst droughts in decades"},
+      {"name":"Southern Africa: maize failure and hunger","kind":"food","segs":[[15,23]],"conf":3,"desc":"Harvest is in April–May and the shortfall shows at once, but the lean season runs October 2027 – March 2028. Kariba hydropower drops too.","precedent":"2024: Zambia, Zimbabwe and Malawi declared disasters"},
+      {"name":"West Africa: cocoa","kind":"food","segs":[[11,14]],"conf":1,"desc":"A dry harmattan and heat reduce the crop in Côte d'Ivoire and Ghana. The El Niño link is weaker than in the south.","precedent":"2023–24: cocoa price tripled (several causes)"}
+    ]},
+    {"name":"Asia","items":[
+      {"name":"India: weak monsoon","kind":"drought","segs":[[5,8]],"conf":2,"desc":"Historically about 60% of El Niño years had a rainfall deficit. 2026 outcomes are not checked here.","precedent":"2002, 2009, 2015: monsoon deficits"},
+      {"name":"Indonesia and Malaysia: drought, fires, haze","kind":"drought","segs":[[6,10]],"conf":3,"desc":"Peat fires and smog over Singapore and Malaysia. Ends when the monsoon arrives in November–December.","precedent":"2015: 2.6 million ha burned, hundreds of thousands sick"},
+      {"name":"Palm oil: delayed yield drop","kind":"food","segs":[[14,23]],"conf":2,"desc":"The 2026 drought hits yields 6–24 months later, so the impact lands in 2027.","precedent":"Production fell in 2016"},
+      {"name":"Philippines, Thailand, Vietnam, Mekong: drought","kind":"drought","segs":[[12,16]],"conf":3,"desc":"A hard dry season: rice, sugar, robusta coffee, saltwater intrusion in the Mekong delta.","precedent":"2016 and 2024: drought and delta salinisation"},
+      {"name":"Southern China: wet winter","kind":"rain","segs":[[11,14]],"conf":1,"desc":"More rain in southern and south-eastern China.","precedent":"1998: major Yangtze floods in the summer after the peak"},
+      {"name":"South Asia: pre-monsoon heat 2027","kind":"heat","segs":[[14,17]],"conf":2,"desc":"The year after El Niño often brings extreme heat in April–June.","precedent":"2016 and 2024: record heat in India"},
+      {"name":"Dengue in South-East Asia and Latin America","kind":"health","segs":[[11,17]],"conf":2,"desc":"Heat and standing water speed up mosquito breeding.","precedent":"2024: record dengue in the Americas"}
+    ]},
+    {"name":"Australia and Oceania","items":[
+      {"name":"Eastern Australia: dry spring, grain losses","kind":"drought","segs":[[5,10]],"conf":2,"desc":"Less winter and spring rain. Stronger signal with a positive Indian Ocean Dipole.","precedent":"2015, 2023: weak harvests"},
+      {"name":"Australia: heat and bushfire season","kind":"heat","segs":[[10,13]],"conf":2,"desc":"Vegetation dried out by spring, then summer heat.","precedent":"1982–83 and 2006 coincided with El Niño (2019–20 did not)"},
+      {"name":"Western Pacific: drought, drinking-water shortage","kind":"drought","segs":[[10,17]],"conf":3,"desc":"Papua New Guinea, Micronesia, Marshall Islands, Palau. Frost in the PNG highlands.","precedent":"1997–98 and 2015–16: hunger in the PNG highlands"},
+      {"name":"Central Pacific: cyclones shift east","kind":"ocean","segs":[[11,15]],"conf":2,"desc":"Cyclones reach French Polynesia and Kiribati more often.","precedent":"1983 and 1998: unusual cyclones near Tahiti"}
+    ]}
+  ]
+}

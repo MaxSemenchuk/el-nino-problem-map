@@ -1,5 +1,7 @@
 # El Niño 2026–27 Problem Map
 
+The site has two pages: an **impact calendar** (home page) that shows when and where the 2026–27 El Niño hits, with a marker for today, and the **problem map** described below.
+
 An open, argue-with-it inventory of the problems that stand between a very strong El Niño forecast and effective collective action, and of who is working on each one.
 
 It is a map, not a plan. It is meant to help people with experience in facilitation, digital platforms, tools and governance see where the real obstacles are, where uncertainty is largest, and where help is most needed.
@@ -32,11 +34,14 @@ Then open http://localhost:8000.
 ## Repository layout
 
 ```
-index.html, app.js, style.css   the page (D3 force graph, no build step)
-data/problems.json              all content: problems, organisations, links
-docs/METHODOLOGY.md             layers, labels, scales, limits
-docs/SOURCES.md                 where facts came from, and what is unchecked
-CONTRIBUTING.md                 how to correct, extend or disagree
+index.html, calendar.js, calendar.css   impact calendar (home page, no build step)
+problems.html, app.js, style.css        problem map (D3 force graph, no build step)
+nav.css                                 shared site menu
+data/impacts.json                       calendar content: phases, Niño-3.4 sketch, regional impacts
+data/problems.json                      problem map content: problems, organisations, links
+docs/METHODOLOGY.md                     layers, labels, scales, limits
+docs/SOURCES.md                         where facts came from, and what is unchecked
+CONTRIBUTING.md                         how to correct, extend or disagree
 ```
 
 ## How to help

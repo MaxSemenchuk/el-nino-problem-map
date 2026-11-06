@@ -5,6 +5,6 @@ The contents of `data/` and `docs/`, and the text of the README, are licensed un
 
 You may copy, adapt and redistribute them, including commercially, if you credit the project and indicate changes.
 
-The code (`index.html`, `app.js`, `style.css`) is under the MIT License in `LICENSE`.
+The code (`index.html`, `calendar.js`, `calendar.css`, `problems.html`, `app.js`, `style.css`, `nav.css`) is under the MIT License in `LICENSE`.
 
 Facts in the data come from third-party public sources listed in `docs/SOURCES.md`. Those sources keep their own terms.

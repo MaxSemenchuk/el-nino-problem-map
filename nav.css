@@ -1,0 +1,6 @@
+/* Shared site menu. Uses each page's own tokens with fallbacks. */
+.site-nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;padding-bottom:10px;border-bottom:1px solid var(--line,#d6d9df);font-size:14px}
+.site-nav .brand{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted,#59616d);margin-right:auto}
+.site-nav a{color:var(--muted,#59616d);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.site-nav a:hover{color:var(--ink,var(--fg,#14181f))}
+.site-nav a[aria-current="page"]{color:var(--ink,var(--fg,#14181f));border-bottom-color:var(--accent,var(--now,#0f766e));font-weight:600}
