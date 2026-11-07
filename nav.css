@@ -4,3 +4,4 @@
 .site-nav a{color:var(--muted,#59616d);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
 .site-nav a:hover{color:var(--ink,var(--fg,#14181f))}
 .site-nav a[aria-current="page"]{color:var(--ink,var(--fg,#14181f));border-bottom-color:var(--accent,var(--now,#0f766e));font-weight:600}
+.moved-note{margin:10px 0 0;padding:8px 12px;border:1px solid var(--accent,var(--now,#0f766e));border-radius:6px;font-size:14px}

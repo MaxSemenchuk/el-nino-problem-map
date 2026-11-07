@@ -1,5 +1,7 @@
 # El Niño 2026–27 Problem Map
 
+> **Moved.** This project now lives in [citizen-infra/senri](https://github.com/citizen-infra/senri/tree/main/el-nino), published at https://citizen-infra.github.io/senri/el-nino/. This repository is no longer updated.
+
 The site has three pages: an **impact calendar** (home page) that shows when and where the 2026–27 El Niño hits, with a marker for today, the **problem map** described below, and a **research** reading list whose entries link to the problems they inform (each problem on the map lists the research that cites it). Link to one problem with `problems.html?p=<id>`, for example `problems.html?p=6.1`.
 
 An open, argue-with-it inventory of the problems that stand between a very strong El Niño forecast and effective collective action, and of who is working on each one.
